@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a DOM</title>
+    <style>
+        body {
+            background: antiquewhite;
+            color: rgb(62, 20, 20);
+            font: normal 20pt Araial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Aprendendo <strong>DOM</strong> com JavaScript</h1>
+    <p>Aqui esta o resultado: </p>
+    <div id="msg">Clique em MIM!</div>
+    <br>
+    <script>
+        //pegar pro tag
+        /*
+        var p0 = window.document.getElementsByTagName('p')[0]
+        let corpo = window.document.body //apelido
+        //mostrando
+        window.document.write("Texto do primeiro parágrafo está escrito: "+p0.innerText)
+        //p0.style.color = "yellow" //muda a cor
+        //corpo.style.background = "red"
+        */
+        
+        //por id
+        /*
+        var msg = window.document.getElementById('msg')
+        //msg.style.color = 'red' //deixo vermelho
+        //msg.innerText = "Mudei o testo do 'msg'"
+        */
+       
+        //por querry selector
+        var titulo = document.querySelector('#titulo')
+        titulo.style.color = 'blue'
+    </script>
+</body>
+</html>
