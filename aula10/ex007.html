@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        input{
+            font: normal 20pt arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Somar Números</h1>
+    <input type="number" name="inpn1" id="inpn1"> +
+    <input type="number" name="inpn2" id="inpn2">
+    <input type="button" value="Somar" onclick="Somar()">
+    <div id="res">Resultado...</div>
+    <script>
+        function Somar(){
+            var cn1 = window.document.getElementById('inpn1')
+            var cn2 = window.document.querySelector('input#inpn2')
+            var cres = window.document.getElementById('res')
+            var n1 = Number(cn1.value)
+            var n2 = Number(cn2.value)//valor de cn2, ou seja o número.
+            var res = n1 + n2 //resultado da soma
+            cres.innerText = `A soma de ${n1} mais ${n2} é ${res}.`
+
+        }
+    </script>
+</body>
+</html>
